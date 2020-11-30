@@ -1,0 +1,1 @@
+require('./days/22');
