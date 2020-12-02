@@ -15,10 +15,14 @@ namespace aoc_2020
             // Console.WriteLine("Fuel Needed [1969]: {0}", Fuel.CalculateFuel(1969));
             // Console.WriteLine("Fuel Needed [100756]: {0}", Fuel.CalculateFuel(100756));
 
-            List<int> testArray = new List<int> {1721, 979, 366, 299, 675, 1456};
-            Console.WriteLine("Expense Product: {0}", Expense.FindSumSetFuture(testArray));
+            // Day 01
+            // List<int> testArray = new List<int> {1721, 979, 366, 299, 675, 1456};
+            // Console.WriteLine("Expense Product: {0}", Expense.FindSumSetFuture(testArray));
 
-            Console.WriteLine("Full Expense Calcuation: {0}", Day01.CalculateDayAnswer());
+            // Console.WriteLine("Full Expense Calcuation: {0}", Day01.CalculateDayAnswer());
+
+            // Day 02
+            Console.WriteLine("Number of Valid Passwords: {0}", Day02.ValidPasswordCount());
         }
     }
 }
