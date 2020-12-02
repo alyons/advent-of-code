@@ -13,7 +13,7 @@ namespace AdventOfCode_2020.Days {
         expenses.Add(int.Parse(line));
       }
 
-      return Expense.FindSumSetFuture(expenses);
+      return Expense.FindSumSetZio(expenses);
     }
   }
 }
