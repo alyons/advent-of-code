@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using AdventOfCode_2019.Functions;
 using AdventOfCode_2020.Days;
-using AdventOfCode_2020.Functions;
 
 namespace aoc_2020
 {
@@ -10,11 +7,6 @@ namespace aoc_2020
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Fuel Needed [12]: {0}", Fuel.CalculateFuel(12));
-            // Console.WriteLine("Fuel Needed [14]: {0}", Fuel.CalculateFuel(14));
-            // Console.WriteLine("Fuel Needed [1969]: {0}", Fuel.CalculateFuel(1969));
-            // Console.WriteLine("Fuel Needed [100756]: {0}", Fuel.CalculateFuel(100756));
-
             // Day 01
             // List<int> testArray = new List<int> {1721, 979, 366, 299, 675, 1456};
             // Console.WriteLine("Expense Product: {0}", Expense.FindSumSetFuture(testArray));
@@ -22,7 +14,11 @@ namespace aoc_2020
             // Console.WriteLine("Full Expense Calcuation: {0}", Day01.CalculateDayAnswer());
 
             // Day 02
-            Console.WriteLine("Number of Valid Passwords: {0}", Day02.ValidPasswordCount());
+            // Console.WriteLine("Number of Valid Passwords: {0}", Day02.ValidPasswordCount());
+
+            // Day 03
+            Console.WriteLine("Number of trees encountered: {0}", Day03.CalculateCollisions());
+            Console.WriteLine("Product Collisions: {0}", Day03.ProductCollision());
         }
     }
 }
