@@ -24,8 +24,12 @@ namespace aoc_2020
             // Console.WriteLine("Valid Passports: {0}", Day04.ValidPassports());
 
             // Day 05
-            Console.WriteLine("Boarding Pass: {0}", Day05.LargestBoardingPass());
-            Console.WriteLine("My Boarding Pass: {0}", Day05.FindMySeat());
+            // Console.WriteLine("Boarding Pass: {0}", Day05.LargestBoardingPass());
+            // Console.WriteLine("My Boarding Pass: {0}", Day05.FindMySeat());
+
+            // Day 06
+            // Console.WriteLine("Sum of Declarations: {0}", Day06.SumQuestions(Day06.ReadQuestions()));
+            Console.WriteLine("Sum of Declarations: {0}", Day06.SumQuestions(Day06.ReadQuestionsEx()));
         }
     }
 }
