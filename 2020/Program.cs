@@ -29,7 +29,11 @@ namespace aoc_2020
 
             // Day 06
             // Console.WriteLine("Sum of Declarations: {0}", Day06.SumQuestions(Day06.ReadQuestions()));
-            Console.WriteLine("Sum of Declarations: {0}", Day06.SumQuestions(Day06.ReadQuestionsEx()));
+            // Console.WriteLine("Sum of Declarations: {0}", Day06.SumQuestions(Day06.ReadQuestionsEx()));
+
+            // Day 07
+            // Console.WriteLine("Number of Colors: {0}", Day07.BagsWhichCanHoldGold());
+            Console.WriteLine("Number of bags held: {0}", Day07.BagsWhichGoldHolds());
         }
     }
 }
