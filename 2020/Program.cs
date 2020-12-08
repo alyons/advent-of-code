@@ -33,7 +33,11 @@ namespace aoc_2020
 
             // Day 07
             // Console.WriteLine("Number of Colors: {0}", Day07.BagsWhichCanHoldGold());
-            Console.WriteLine("Number of bags held: {0}", Day07.BagsWhichGoldHolds());
+            // Console.WriteLine("Number of bags held: {0}", Day07.BagsWhichGoldHolds());
+
+            // Day 08
+            // Console.WriteLine("Accumulator Value: {0}", Day08.SingleRunValue());
+            Console.WriteLine($"Accumulator After Modification: {Day08.FindFullRun()}");
         }
     }
 }
