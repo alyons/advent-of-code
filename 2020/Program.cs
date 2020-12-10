@@ -37,7 +37,15 @@ namespace aoc_2020
 
             // Day 08
             // Console.WriteLine("Accumulator Value: {0}", Day08.SingleRunValue());
-            Console.WriteLine($"Accumulator After Modification: {Day08.FindFullRun()}");
+            // Console.WriteLine($"Accumulator After Modification: {Day08.FindFullRun()}");
+
+            // Day 09
+            // Console.WriteLine("Invalid Number in Sequence: {0}", Day09.ValidateXMASInput());
+            // Console.WriteLine("Break Point Value: {0}", Day09.BreakXMASInput());
+
+            // Day 10
+            // Console.WriteLine("Adapter Number: {0}", Day10.AdapterNumber());
+            Console.WriteLine("Configurations: {0}", Day10.NumberOfConfigurations());
         }
     }
 }
