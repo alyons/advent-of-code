@@ -50,7 +50,7 @@ namespace aoc_2020
             // Day 11
             // Console.WriteLine("Occupied Seat Count: {0}", Day11_Old.FindOccupiedSeatsAsync());
             // Part 1: 2329 > Complete!
-            // Part 2: 2199 > 2449 (too high)
+            // Part 2: 2199 (too high & someone else's answer) > 2449 (too high)
             Console.WriteLine("Losing my sanity: {0}", Day11.FindOccupiedSeats());
         }
     }

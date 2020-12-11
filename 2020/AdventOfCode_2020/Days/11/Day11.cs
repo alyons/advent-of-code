@@ -10,16 +10,37 @@ namespace AdventOfCode_2020.Days {
       var map = reader.ReadToEnd();
       Dictionary<int, int[]> seatViewMapping = new Dictionary<int, int[]>();
       BuildSeatViewMap(map, ref seatViewMapping);
-      var output = ProcessMap(map, seatViewMapping);
 
-      Console.WriteLine(output);
+      // testQueen1 -> 8 Chairs & 8 Occupied
+      // Console.WriteLine("Characters: {0}", map.Length);
+      // PrintDictonary(seatViewMapping);
+      // return seatViewMapping[43].Count(i => i > -1);
+
+      // testQueen2 -> 1 Empty Seat & 0 Occupied
+      // Console.WriteLine("Characters: {0}", map.Length);
+      // PrintDictonary(seatViewMapping);
+      // return seatViewMapping[15].Count(i => i > -1);
+      // return seatViewMapping[15].Count(i => i > -1 && map[i] == '#');
+
+      // testQueen3 -> 0 Chairs & 0 Occupied
+      // Console.WriteLine("Characters: {0}", map.Length);
+      // PrintDictonary(seatViewMapping);
+      // return seatViewMapping[27].Count(i => i > -1);
+
+      Console.WriteLine("Characters: {0}", map.Length);
+      
+      var output = ProcessMap(map, seatViewMapping);
+      // Console.WriteLine(output);
 
       while(!map.Equals(output)) {
         map = output;
         output = ProcessMap(map, seatViewMapping);
-        Console.WriteLine();
-        Console.WriteLine(output);
+        // Console.WriteLine();
+        // Console.WriteLine(output);
       }
+      
+      // PrintDictonary(seatViewMapping);
+      
 
       return output.Count(c => c == '#');
     }
@@ -32,6 +53,8 @@ namespace AdventOfCode_2020.Days {
         for(int x = 0; x < cols; x++) {
           var index = ConvertCoordinatesToStringIndex(x, y, cols);
           if (index < map.Length && map[index] == 'L') {
+            // seatViewMapping.Add(index, BuildAdjacentChairMap(map, x, y, rows, cols)); // Part 1 Mapping (new & not working)
+
             // var chairSet = new int[]{ -1, -1, -1, -1, -1, -1, -1, -1 };
             // chairSet[0] = FindChairInDirection(map, x, y, -1, -1); // Upper Left
             // chairSet[1] = FindChairInDirection(map, x, y, -1, 0);  // Left
@@ -47,6 +70,23 @@ namespace AdventOfCode_2020.Days {
           }
         }
       }
+    }
+
+    private static int[] BuildAdjacentChairMap(string map, int x, int y, int rows, int cols) {
+      List<int> chairSet = new List<int>();
+      for(int y1 = Math.Max(0, y - 1); y1 < Math.Min(cols, y + 2); y1++) {
+        for (int x1 = Math.Max(0, x - 1); x1 < Math.Min(rows, x + 2); x1++) {
+          if (x1 == x && y1 == y) continue;
+          var index = ConvertCoordinatesToStringIndex(x1, y1, cols);
+          if (index > -1 && index < map.Length) {
+            chairSet.Add(index);
+          } else {
+            chairSet.Add(-1); // The space doesn't exists
+          }
+        }
+      }
+
+      return chairSet.ToArray();
     }
 
     private static int[] BuildSingleChairMap(string map, int x, int y, int rows, int cols) {
@@ -201,7 +241,7 @@ namespace AdventOfCode_2020.Days {
             if (count == 0) output[key] = '#';
             break;
           case '#':
-            if (count >= 5) output[key] = 'L';
+            if (count >= 5) output[key] = 'L'; // 4 for Part 1 & 5 for Part 2
             break;
           default:
             // Do Nothing
@@ -210,6 +250,14 @@ namespace AdventOfCode_2020.Days {
       }
       
       return new string(output);
+    }
+
+    private static void PrintDictonary(Dictionary<int, int[]> dict) {
+      var toWrite = "";
+      foreach(KeyValuePair<int, int[]> pair in dict) {
+        toWrite += "" + pair.Key + ": [" + string.Join(", ", pair.Value) + "]\n";
+      }
+      Console.Write(toWrite);
     }
 
   }
