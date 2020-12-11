@@ -45,7 +45,13 @@ namespace aoc_2020
 
             // Day 10
             // Console.WriteLine("Adapter Number: {0}", Day10.AdapterNumber());
-            Console.WriteLine("Configurations: {0}", Day10.NumberOfConfigurations());
+            // Console.WriteLine("Configurations: {0}", Day10.NumberOfConfigurations());
+
+            // Day 11
+            // Console.WriteLine("Occupied Seat Count: {0}", Day11_Old.FindOccupiedSeatsAsync());
+            // Part 1: 2329 > Complete!
+            // Part 2: 2199 > 2449 (too high)
+            Console.WriteLine("Losing my sanity: {0}", Day11.FindOccupiedSeats());
         }
     }
 }
