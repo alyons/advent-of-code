@@ -51,7 +51,19 @@ namespace aoc_2020
             // Console.WriteLine("Occupied Seat Count: {0}", Day11_Old.FindOccupiedSeatsAsync());
             // Part 1: 2329 > Complete!
             // Part 2: 2199 (too high & someone else's answer) > 2449 (too high)
-            Console.WriteLine("Losing my sanity: {0}", Day11.FindOccupiedSeats());
+            // Console.WriteLine("Losing my sanity: {0}", Day11.FindOccupiedSeats());
+
+            // Day 12
+            // Console.WriteLine("Manhattan Distance: {0}", Day12.ManhattanDistance());
+            // Console.WriteLine("Manhattan Distance: {0}", Day12.CaluclateWayPoint());
+
+            // Day 13
+            // Console.WriteLine("Bus Depart Calculation: {0}", Day13.BusDepartureAlpha());
+            // Console.WriteLine("Get the gold coin: {0}", Day13.GetTheGoldCoin());
+
+            // Day 14
+            // Console.WriteLine("Sum of Memory: {0}", Day14.CalculateSum());
+            Console.WriteLine("Sum Version 2: {0}", Day14.CalculateSumV2());
         }
     }
 }
