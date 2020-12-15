@@ -63,7 +63,11 @@ namespace aoc_2020
 
             // Day 14
             // Console.WriteLine("Sum of Memory: {0}", Day14.CalculateSum());
-            Console.WriteLine("Sum Version 2: {0}", Day14.CalculateSumV2());
+            // Console.WriteLine("Sum Version 2: {0}", Day14.CalculateSumV2());
+
+            // Day 15
+            // Console.WriteLine("2020th number in the sequence: {0}", Day15.FindNumberInSequence(2020));
+            Console.WriteLine("Value at index 2020:           {0}", Day15.FindIndexInSequence(30000000));
         }
     }
 }
