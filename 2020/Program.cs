@@ -67,7 +67,12 @@ namespace aoc_2020
 
             // Day 15
             // Console.WriteLine("2020th number in the sequence: {0}", Day15.FindNumberInSequence(2020));
-            Console.WriteLine("Value at index 2020:           {0}", Day15.FindIndexInSequence(30000000));
+            // Console.WriteLine("Value at index 2020:           {0}", Day15.FindIndexInSequence(30000000));
+
+            // Day 16
+            // Console.WriteLine("Ticket Error Rate: {0}", Day16.FindInvalidTickets());
+            Console.WriteLine("Ticket Set Order: {0}", Day16.FindFieldOrder());
+            // 856020879149 (too high)
         }
     }
 }
