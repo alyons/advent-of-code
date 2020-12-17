@@ -71,8 +71,12 @@ namespace aoc_2020
 
             // Day 16
             // Console.WriteLine("Ticket Error Rate: {0}", Day16.FindInvalidTickets());
-            Console.WriteLine("Ticket Set Order: {0}", Day16.FindFieldOrder());
+            // Console.WriteLine("Ticket Set Order: {0}", Day16.FindFieldOrder());
             // 856020879149 (too high)
+
+            // Day 17
+            // Console.WriteLine("Power Cubes Active: {0}", Day17.ActiveCubes());
+            Console.WriteLine("4d Power Cubes Active: {0}", Day17.Active4DCubes());
         }
     }
 }
