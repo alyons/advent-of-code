@@ -76,7 +76,10 @@ namespace aoc_2020
 
             // Day 17
             // Console.WriteLine("Power Cubes Active: {0}", Day17.ActiveCubes());
-            Console.WriteLine("4d Power Cubes Active: {0}", Day17.Active4DCubes());
+            // Console.WriteLine("4d Power Cubes Active: {0}", Day17.Active4DCubes());
+
+            // Day 18
+            Console.WriteLine("Sum of Equations: {0}", Day18.CalculateSumOfEquations());
         }
     }
 }
