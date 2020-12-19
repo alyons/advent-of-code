@@ -1,0 +1,34 @@
+// First Attempt, worked for test, out of memory for problem
+    static string BuildRegex(Dictionary<int, string> rules) {
+      Console.WriteLine("Building regex...");
+      var output = rules[0];
+      Regex numberMatch = new Regex(@"\d+");
+      MatchCollection matches = numberMatch.Matches(output);
+      // while there are numbers in the output
+      while(matches.Count > 0) {
+        Console.WriteLine(output);
+        foreach(Match match in matches) {
+          // Console.WriteLine(match.Value);
+          string value = match.Value;
+          var index = int.Parse(value);
+          output = output.Replace($"{index}", $"({rules[index]})");
+        }
+
+        matches = numberMatch.Matches(output);
+      }
+      
+      // Remove Extra Spaces
+      output = output.Replace(" ", "");
+
+      // Remove parentheses around a single character
+      var singleCharPattern = @"\((?<char>.)\)";
+      MatchEvaluator singleCharEval = new MatchEvaluator(CharacterReturn);
+
+      output = Regex.Replace(output, singleCharPattern, singleCharEval);
+
+      return $"^{output}$";
+    }
+
+    static string CharacterReturn(Match match) {
+      return match.Groups["char"].Value;
+    }
