@@ -87,7 +87,11 @@ namespace aoc_2020
             // Day20
 
             // Day 21
-            Console.WriteLine("Total Allergenic Ingredient Count: {0}", Day21.AllergenFreeIngredientCount());
+            // Console.WriteLine("Total Allergenic Ingredient Count: {0}", Day21.AllergenFreeIngredientCount());
+
+            // Day 22
+            // Console.WriteLine("Combat Score: {0}", Day22.CombatScore());
+            Console.WriteLine("Recurseive Combat Score: {0}", Day22.RecursiveCombatScore());
         }
     }
 }

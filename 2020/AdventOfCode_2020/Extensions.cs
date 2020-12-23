@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace AdventOfCode_2020.Days {
@@ -17,6 +18,18 @@ namespace AdventOfCode_2020.Days {
         res[i] = source[i + start];
       }
       return res;
+    }
+
+    public static Queue<T> CloneCount<T>(this Queue<T> source, int count) {
+      Queue<T> output = new Queue<T>();
+
+      var tempClone = source.ToArray();
+
+      for(int i = 0; i < count; i++) {
+        output.Enqueue(tempClone[i]);
+      }
+
+      return output;
     }
 
     public static void PrintDictionary<TKey,TValue>(Dictionary<TKey, TValue> dictionary) {
