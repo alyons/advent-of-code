@@ -82,7 +82,12 @@ namespace aoc_2020
             // Console.WriteLine("Sum of Equations: {0}", Day18.CalculateSumOfEquations());
 
             // Day 19
-            Console.WriteLine("Matching Messages: {0}", Day19.RegexMatch());
+            // Console.WriteLine("Matching Messages: {0}", Day19.RegexMatch());
+
+            // Day20
+
+            // Day 21
+            Console.WriteLine("Total Allergenic Ingredient Count: {0}", Day21.AllergenFreeIngredientCount());
         }
     }
 }
