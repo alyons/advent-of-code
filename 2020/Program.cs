@@ -91,7 +91,10 @@ namespace aoc_2020
 
             // Day 22
             // Console.WriteLine("Combat Score: {0}", Day22.CombatScore());
-            Console.WriteLine("Recurseive Combat Score: {0}", Day22.RecursiveCombatScore());
+            // Console.WriteLine("Recurseive Combat Score: {0}", Day22.RecursiveCombatScore());
+
+            // Day 23
+            Console.WriteLine("Cup Order: {0}", Day23.CupChallengeScore());
         }
     }
 }
