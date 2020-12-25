@@ -32,6 +32,14 @@ namespace AdventOfCode_2020.Days {
       return output;
     }
 
+    public static void Set<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key, TValue value) {
+      if (dictionary.ContainsKey(key)) {
+        dictionary[key] = value;
+      } else {
+        dictionary.Add(key, value);
+      }
+    }
+
     public static void PrintDictionary<TKey,TValue>(Dictionary<TKey, TValue> dictionary) {
       if (typeof(TValue).IsAssignableFrom(typeof(IEnumerable<object>))) {
         foreach(KeyValuePair<TKey, TValue> pair in dictionary) {
