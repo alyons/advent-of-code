@@ -98,7 +98,10 @@ namespace aoc_2020
 
             // Day 24
             // Console.WriteLine("Black Tiles: {0}", Day24.BlackTileCount());
-            Console.WriteLine("Black Tiles: {0}", Day24.BlackTileDays());
+            // Console.WriteLine("Black Tiles: {0}", Day24.BlackTileDays());
+
+            // Day 25
+            Day25.ReverseCryptographicHandshake();
         }
     }
 }
